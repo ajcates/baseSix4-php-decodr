@@ -7,11 +7,11 @@ if(isset($_POST['code'])) {
 	//aww fuck we got code
 	$oCode = $_POST['code'];
     $dCode = htmlspecialchars(preg_replace_callback(
-        '/base64_decode\([\"|\s|\']+([^\"\']*)[\"|\']\s*\)/',
+        '/base64_decode\(\s*([\"|\'])([^\"\']*)[\"|\']\s*\)/',
         //'/base64_decode/',
         function($matches) {
         	//return "\n\n" . print_r($matches, true);
-        	return '"' . addslashes(addslashes(base64_decode($matches[1]))) . '"';
+        	return '\'' . addslashes(base64_decode($matches[2])) . '\'';
         },
         stripslashes($oCode)
     ));
