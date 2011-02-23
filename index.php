@@ -11,7 +11,7 @@ if(isset($_POST['code'])) {
         //'/base64_decode/',
         function($matches) {
         	//return "\n\n" . print_r($matches, true);
-        	return '"' . base64_decode($matches[1]) . '"';
+        	return '"' . addslashes(addslashes(base64_decode($matches[1]))) . '"';
         },
         stripslashes($oCode)
     ));
