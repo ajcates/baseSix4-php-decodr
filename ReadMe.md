@@ -1,0 +1,1 @@
+This is a little base64 decoder tool I wrote to help kick some ass on obfuscated php code. Turns `base64_decode("S2ljayBBc3M=")` in your php code into "Kick Ass".

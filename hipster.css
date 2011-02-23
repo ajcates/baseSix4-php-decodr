@@ -58,7 +58,7 @@ a img {border: 0;}
 	line-height: 30px;
 }
 
-body {
+body, input {
 	font: 16px/24px Georgia, serif;
 }
 
@@ -96,14 +96,27 @@ body {
 	background: rgb(205,218,223) url("images/bg.png") repeat;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	color: rgba(0,0,0, .7);
+	text-shadow: 0px 1px 0px rgba(255,255,255, .7);
+	-webkit-font-smoothing: antialiased;
 }
 h1 {
-	color: rgba(0,0,0, .7);
-	text-shadow: 0px 2px 1px rgba(255,255,255, .3);
+	font-family:  Helvetica, “Helvetica Neue”, Arial, sans-serif;
 }
-
+h1 + h4 {
+	position: relative;
+	top: -1em;
+}
+textarea, code {
+	font-family: menlo, Consolas, Monaco, "DejaVu Sans Mono", "Liberation Mono", "Bitstream Vera Sans Mono", "Lucida Console", "Courier New", Courier, monospace;
+}
 textarea {
 	width: 100%;
+	-webkit-border-radius: .5em;
+	
+	padding: .5em;
+	border: 1px solid rgba(0,0,0, .3);
+	-webkit-box-shadow: 0px 1px 0px rgba(255,255,255, .7);
 }
 
 input[type='submit'] {
