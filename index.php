@@ -31,7 +31,7 @@ if(isset($_POST['code'])) {
 		<h1>Fuck you.</h1>
 	<![endif]-->
 	<h1>baseSix4 php decodr</h1>
-	<h4>Reliving you of <code>base64_decode("R2FyYmFnZQ==")</code> shit since 1864.</h4>
+	<h4>Relieving you of <code>base64_decode("R2FyYmFnZQ==")</code> shit since 1864.</h4>
 	<form method="post">
 		<? if(isset($dCode)): ?>
 			<label for="dCode">Kick ass &amp; some what clean php code:</label>

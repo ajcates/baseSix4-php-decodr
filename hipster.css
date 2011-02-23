@@ -113,10 +113,11 @@ textarea, code {
 textarea {
 	width: 100%;
 	-webkit-border-radius: .5em;
-	
+	-moz-border-radius: .5em;
 	padding: .5em;
 	border: 1px solid rgba(0,0,0, .3);
 	-webkit-box-shadow: 0px 1px 0px rgba(255,255,255, .7);
+	-moz-box-shadow: 0px 1px 0px rgba(255,255,255, .7);
 }
 
 input[type='submit'] {
@@ -133,6 +134,12 @@ input[type='submit'] {
 		0px 11px 0px rgba(255,255,255, .7),
 		0px 12px 5px rgba(0,0,0, .3)
 	;
+	-moz-border-radius: .25em;
+	-moz-box-shadow:
+		0px 10px 0px rgba(0,0,0, .7),
+		0px 11px 0px rgba(255,255,255, .7),
+		0px 12px 5px rgba(0,0,0, .3)
+	;
 	text-shadow: 0px 1px 0px rgba(255,255,255, .3);
 	position: relative;
 }
@@ -143,6 +150,11 @@ input[type='submit']:active {
 	top: 9px;
 	background: rgba(0,0,0, .6);
 	-webkit-box-shadow:
+		0px 1px 0px rgba(0,0,0, .8),
+		0px 2px 0px rgba(255,255,255, .7),
+		0px 3px 5px rgba(0,0,0, .3)
+	;
+	-moz-box-shadow:
 		0px 1px 0px rgba(0,0,0, .8),
 		0px 2px 0px rgba(255,255,255, .7),
 		0px 3px 5px rgba(0,0,0, .3)
