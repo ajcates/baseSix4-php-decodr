@@ -16,9 +16,7 @@ if(isset($_POST['code'])) {
         stripslashes($oCode)
     ));
     $oCode = htmlspecialchars(stripslashes($oCode));
-	//print_r($oCode);
 }
-
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
