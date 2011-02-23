@@ -42,6 +42,6 @@ if(isset($_POST['code'])) {
 		<input type="submit" value="America Fuck Yea!" />
 	</form>
 	<p>This is a little base64 decoder tool I wrote to help kick some ass on obfuscated php code. Turns <code>base64_decode("S2ljayBBc3M=")</code> in your php code into "Kick Ass".</p>
-	<p>The source is available on github. Also you should read my fucking <a href="http://ajcates.tumblr.com">tumblr</a> cause it's totally kickass.</p>
+	<p>The source is available on <a href="https://github.com/ajcates/baseSix4-php-decodr">github</a>. Also you should read my fucking <a href="http://ajcates.tumblr.com">tumblr</a> cause it's totally kickass.</p>
 </body>
 </html>
