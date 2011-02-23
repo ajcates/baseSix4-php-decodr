@@ -2,7 +2,17 @@
 if(isset($_POST['code'])) {
 	//aww fuck we got code
 	$oCode = $_POST['code'];
-	$dCode = $oCode;
+
+    $dCode = htmlspecialchars(preg_replace_callback(
+        '/base64_decode\([\"|\s|\']+([^\"\']*)[\"|\']\s*\)/',
+        //'/base64_decode/',
+        function($matches) {
+        	//return "\n\n" . print_r($matches, true);
+        	return '"' . base64_decode($matches[1]) . '"';
+        },
+        stripslashes($oCode)
+    ));
+    $oCode = htmlspecialchars(stripslashes($oCode));
 	//print_r($oCode);
 }
 
@@ -22,11 +32,11 @@ if(isset($_POST['code'])) {
 	<h1>Base six4 decodr</h1>
 	<form method="post">
 		<? if(isset($dCode)): ?>
-			<label for="oCode">Kick ass some what clean php code:</label>
-			<textarea name="code" rows="20" placeholder="c0dez"><?=$dCode?></textarea>	
+			<label for="dCode">Kick ass some what clean php code:</label>
+			<textarea name="dCode" rows="20" placeholder="c0dez"><?=$dCode?></textarea>	
 		<? endif;?>
 		<label for="oCode">Shitty base64 infected php code:</label>
-		<textarea id="oCode" name="code" rows="20" placeholder="c0dez"></textarea>
+		<textarea id="oCode" name="code" rows="20" placeholder="c0dez"><?= isset($oCode) ? $oCode : null?></textarea>
 		<input type="submit" value="America Fuck Yea!" />
 	</form>
 	<p>This is a little base64 decoder tool I wrote to help kick some ass on obfuscated php code.</p>
