@@ -31,17 +31,17 @@ if(isset($_POST['code'])) {
 		<h1>Fuck you.</h1>
 	<![endif]-->
 	<h1>baseSix4 php decodr</h1>
-	<h4>Relieving you of <code>base64_decode("R2FyYmFnZQ==")</code> shit since 1864.</h4>
+	<h4>Relieving you of <code>base64_decode("R2FyYmFnZQ==")</code> troubles since 1864.</h4>
 	<form method="post">
 		<? if(isset($dCode)): ?>
-			<label for="dCode">Kick ass &amp; some what clean php code:</label>
+			<label for="dCode">Über sweet &amp; some what clean php code:</label>
 			<textarea name="dCode" rows="20"><?=$dCode?></textarea>	
 		<? endif;?>
-		<label for="oCode">Shitty base64 infected php code:</label>
+		<label for="oCode">Horrible base64 infected php code:</label>
 		<textarea id="oCode" name="code" rows="20"><?= isset($oCode) ? $oCode : null?></textarea>
 		<input type="submit" value="America Fuck Yea!" />
 	</form>
 	<p>This is a little base64 decoder tool I wrote to help kick some ass on obfuscated php code. Turns <code>base64_decode("S2ljayBBc3M=")</code> in your php code into "Kick Ass".</p>
-	<p>The source is available on <a href="https://github.com/ajcates/baseSix4-php-decodr">github</a>. Also you should read my fucking <a href="http://ajcates.tumblr.com">tumblr</a> cause it's totally kickass.</p>
+	<p>The source is available on <a href="https://github.com/ajcates/baseSix4-php-decodr">github</a>. Also you should read my awesome <a href="http://ajcates.tumblr.com">tumblr</a> cause it's totally pure awesomeness.</p>
 </body>
 </html>
